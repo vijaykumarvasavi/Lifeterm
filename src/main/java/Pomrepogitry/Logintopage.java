@@ -16,7 +16,7 @@ public class Logintopage {
 	}	
 	
 	
-	@FindBy(xpath = "(//span[text()='Create an account/ Sign in'])[5]")
+	@FindBy(xpath = "(//button[contains(.,'Create an account')])[last()]")
 	WebElement createaccount;
 	
 	@FindBy(xpath ="//input[@name='mobileNumber']")

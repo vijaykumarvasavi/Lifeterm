@@ -17,8 +17,11 @@ public class Loginpage extends BaseTest{
 		Logintopage login = new Logintopage(driver);
 		Datafilehandiling data = new Datafilehandiling();
 		
-		String MOBILENUMBER = data.getdatafile("Mobilemuber");
+		String MOBILENUMBER = data.getdatafile("Mobilenumber");
 		String OTP = data.getdatafile("Otp");
+		
+		System.out.println(MOBILENUMBER);
+		System.out.println(OTP);
 		
 		
 		login.getCreateaccount().click();
